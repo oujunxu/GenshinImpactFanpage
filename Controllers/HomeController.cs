@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -20,6 +21,17 @@ namespace GenshinImpactFanpage.Controllers
 
         public IActionResult Index()
         {
+            string file_location = "../Images/lightbox_images/";
+            List<string> images = new List<string>();
+
+            for(int i = 1; i<=4; i++)
+            {
+                images.Add(file_location+"lightbox_"+i+".jpg");
+            }
+
+            ViewBag.genshinImages = images;
+            
+            
             return View();
         }
 

@@ -23,14 +23,20 @@ namespace GenshinImpactFanpage.Controllers
         {
             string file_location = "../Images/lightbox_images/";
             List<string> images = new List<string>();
+            List<string> images_c = new List<string>();
 
             for(int i = 1; i<=4; i++)
             {
                 images.Add(file_location+"lightbox_"+i+".jpg");
             }
 
-            ViewBag.genshinImages = images;
+            for (int i = 1; i <= 4; i++)
+            {
+                images_c.Add(file_location + "lightbox_center_" + i + ".jpg");
+            }
             
+            ViewBag.genshinImages = images;
+            ViewBag.genshinImages_center = images_c; 
             
             return View();
         }

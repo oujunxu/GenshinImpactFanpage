@@ -38,20 +38,79 @@ a {
 }
 
 
+/* index page wrapper
+ --------------------------------------------------*/
+.front_part {
+    background-image: url(../Images/front_part_wallpaper.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paimon_img {
+    height: 60%;
+    align-items: center;
+}
+
+.front_part_item {
+    width: 30%;
+    margin: -15px 0 0 55%;
+    text-align: initial;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.front_part_quote_1 {
+    color: white;
+}
+
+.front_part_quote_2 {
+    font-size: 33px;
+    padding-left: 56px;
+}
+
+.orange_text{
+    color: coral;
+}
+
+.front_part_quote_3 {
+    font-size: 33px;
+    padding-left: 16px;
+}
+
+.front_part_quote_capital_letter {
+    color: aquamarine;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.front_part_welcome_text{
+    padding-top: 60%;
+    color: white;
+}
+
+.image_part_text {
+    font-size: 40px;
+    background-color: #549de2;
+    border-radius: 0 49px;
+    width: 63%;
+    margin: 10px auto;
+    color: #fdfdfd;
+    padding-top: 5px;
+    font-family: fangsong;
+}
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
     font-size: 14px;
-    background-image: url(../Images/InazumaWallpaper.jpg);
-    min-height: 100%;
 }
 
 @media (min-width: 768px) {
     html {
         font-size: 16px;
-        background-image: url(../Images/InazumaWallpaper.jpg);
-        min-height: 100%;
     }
 
     .lightbox_table img{
@@ -63,6 +122,16 @@ html {
         margin: auto;
     }
 }
+
+.wrapper,
+main,
+.text-center{
+}
+
+.wrapper{
+    position: relative;
+}
+
 
 .border-top {
   border-top: 1px solid #e5e5e5;
@@ -83,31 +152,30 @@ button.accept-policy {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  height: 100%;
+  margin:0;
 }
 
 body {
     /* Margin bottom by footer height */
-    margin: auto;
+    margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    width: 60%;
     background-color: #fff;
-    min-height: 100%;
+    height: 100%;
+    width: 100%;
 }
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 60%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
-  background-color: white;
-  opacity: 60%;
-  margin: 0 auto;
-  text-align:center;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    background-color: white;
+    opacity: 90%;
+    text-align: center;
 }
+

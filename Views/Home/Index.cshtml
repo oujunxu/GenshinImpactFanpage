@@ -3,16 +3,37 @@
 }
 
 <div class="text-center">
-    <h2 class="display-4">Welcome to Genshin Impact fansite</h2>
-
-    <table class="lightbox_table">
-        <tr>
-            @{
-                foreach (var images in ViewBag.genshinImages)
-                {
-                    <td class="lightbox_image"><a href="@Url.Content(@images)" data-lightbox="roadtrip"><img src="@Url.Content(@images)"></a></td>
-                }
-            }
-        </tr>
-    </table>
+        <div class="front_part">
+            <div class="front_part_item">
+                <div class="front_part_welcome_text">
+                    <div class="front_part_quote_1"><span class="front_part_quote_capital_letter">Step</span> into Teyvat,  </div>
+                    <div class="front_part_quote_2"><span class="orange_text">a</span> vast world teeming with life</div>
+                    <div class="front_part_quote_3">and flowing with elemental energy.</div>
+                </div>
+            </div>
+        </div>
+        <div class="image_part">
+            <div class="image_part_text">Wallpaper gallery</div>
+            <table class="lightbox_table">
+                <tr>
+                    @{
+                        foreach (var images in ViewBag.genshinImages)
+                        {
+                            <td class="lightbox_image"><a href="@Url.Content(@images)" data-lightbox="roadtrip"><img src="@Url.Content(@images)"></a></td>
+                        }
+                    }
+                </tr>
+                <tr>
+                    @{
+                        foreach (var images in ViewBag.genshinImages_center)
+                        {
+                            <td class="lightbox_image"><a href="@Url.Content(@images)" data-lightbox="roadtrip"><img src="@Url.Content(@images)"></a></td>
+                        }
+                    }
+                </tr>
+            </table>
+        </div>
+        <div class="newly_released_char_part"></div>
+        <div class="genshin_history_part"></div>
+        <div class="end_part_index"></div>
 </div>

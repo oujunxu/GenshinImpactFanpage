@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenshinImpactFanpage", "GenshinImpactFanpage.csproj", "{E9A3394F-761C-4348-9174-6B27AF09B555}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GenshinDB", "..\GenshinDB\GenshinDB.sqlproj", "{3AFC8F40-7AD2-4F9F-AF6A-2BCF33AF8182}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GenshinDB", "GenshinDB\GenshinDB.sqlproj", "{3AFC8F40-7AD2-4F9F-AF6A-2BCF33AF8182}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibrary", "..\DataLibrary\DataLibrary.csproj", "{FA005A22-E20B-4CAD-A6CF-3EB8A5235B9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLibrary", "DataLibrary\DataLibrary.csproj", "{08C26957-E056-4BA4-8F2A-054395EED14E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,10 @@ Global
 		{3AFC8F40-7AD2-4F9F-AF6A-2BCF33AF8182}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AFC8F40-7AD2-4F9F-AF6A-2BCF33AF8182}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3AFC8F40-7AD2-4F9F-AF6A-2BCF33AF8182}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{FA005A22-E20B-4CAD-A6CF-3EB8A5235B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA005A22-E20B-4CAD-A6CF-3EB8A5235B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA005A22-E20B-4CAD-A6CF-3EB8A5235B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA005A22-E20B-4CAD-A6CF-3EB8A5235B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C26957-E056-4BA4-8F2A-054395EED14E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C26957-E056-4BA4-8F2A-054395EED14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C26957-E056-4BA4-8F2A-054395EED14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C26957-E056-4BA4-8F2A-054395EED14E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

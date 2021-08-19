@@ -32,16 +32,16 @@ namespace DataLibrary.BusinessLogic
 
         public static List<CharacterModel> GetAllCharacter()
         {
-            string sql = @"select * from dbo.CharacterTable;";
+            string sql = @"select * from dbo.CharactersTable;";
 
             return SqlDataAccess.LoadData<CharacterModel>(sql);
         }
 
         public static List<CharacterModel> GetLatestCharacter()
         {
-            string sql = "Select Name, Rarity, Allegiance, Element, Description " +
-                            "from dbo.CharacterTable " +
-                            "Where Id <= 3;";
+            string sql = "Select Name, Rarity, Allegiance, Element, Image, Description " +
+                            "from dbo.CharactersTable " +
+                            "Where Id = 12;";
 
             return SqlDataAccess.LoadData<CharacterModel>(sql);
         }

@@ -42,7 +42,7 @@ a {
  --------------------------------------------------*/
 .front_part {
     background-image: url(../Images/front_part_wallpaper.jpg);
-    height: 100%;
+    height: 960px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

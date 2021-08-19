@@ -1,4 +1,5 @@
-﻿using GenshinImpactFanpage.Models;
+﻿using DataLibrary.Models;
+using GenshinImpactFanpage.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,6 +8,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using DataLibrary.BusinessLogic;
 
 namespace GenshinImpactFanpage.Controllers
 {
@@ -24,6 +26,7 @@ namespace GenshinImpactFanpage.Controllers
             string file_location = "../Images/lightbox_images/";
             List<string> images = new List<string>();
             List<string> images_c = new List<string>();
+            var chara = CharacterProcessor.GetLatestCharacter();
 
             for(int i = 1; i<=4; i++)
             {
@@ -36,13 +39,33 @@ namespace GenshinImpactFanpage.Controllers
             }
             
             ViewBag.genshinImages = images;
-            ViewBag.genshinImages_center = images_c; 
-            
+            ViewBag.genshinImages_center = images_c;
+            ViewBag.recentCharacter = chara;
             return View();
         }
 
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+
+        public IActionResult CreateCharacter(CharacterModel cm)
+        {
+            if (ModelState.IsValid)
+            {
+                int recordsCreated = CharacterProcessor.CreateCharacter(
+                    cm.Id,
+                    cm.Name,
+                    cm.Rarity,
+                    cm.Birthday,
+                    cm.Allegiance,
+                    cm.Element,
+                    cm.Image,
+                    cm.Description
+                    );
+                return RedirectToAction("Index");
+            }
             return View();
         }
 

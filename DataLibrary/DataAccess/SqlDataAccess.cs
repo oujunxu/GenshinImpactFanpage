@@ -4,14 +4,18 @@ using Dapper;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System;
+using Microsoft.Extensions.Configuration;
 
 namespace DataLibrary.DataAccess
 {
     public static class SqlDataAccess
     {
-        public static string GetConnectionString(string connectionName = "GenshinDB")
+        public static string GetConnectionString()
         {
-            return ConfigurationManager.ConnectionStrings[connectionName].ConnectionString;
+            string connectionString = "Server=(localdb)\\mssqllocaldb;Database=GenshinDB;Trusted_Connection=True;MultipleActiveResultSets=true";
+
+            return connectionString;
         }
 
         public static List<T> LoadData<T>(string sql)

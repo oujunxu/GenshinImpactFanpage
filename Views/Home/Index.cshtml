@@ -1,6 +1,6 @@
 ﻿@using DataLibrary.Models
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
 <div class="text-center">
@@ -35,14 +35,33 @@
             </table>
         </div>
         <div class="newly_released_char_part">
-            @{
-                foreach (CharacterModel data in ViewBag.recentCharacter)
-                {
-                    <div>@data.Name</div>
-                    <img src="@data.Image"/>
-                    <div>@data.Description</div>
+            <h1>Newly Released Characters</h1>
+            <table class="newly_released_char_table">
+                @{
+                    foreach (CharacterModel data in ViewBag.recentCharacter)
+                    {
+                        <tbody>
+                            <tr class="newly_released_char_table_row">
+                                <td>
+                                   <div class="newly_released_char_images">
+                                      <img src="@data.Image" />
+                                   </div>
+                                </td>
+                                <td>
+                                    <div class="newly_released_char_text_wrap">
+                                        <div class="newly_released_char_name">
+                                            <span>Name:</span> <br /> @data.Name
+                                        </div>
+                                        <div class="newly_released_char_description">
+                                            <span>Description:</span> <br /> @data.Description
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    }
                 }
-            }
+            </table>
         </div>
         <div class="genshin_history_part"></div>
         <div class="end_part_index"></div>

@@ -90,6 +90,10 @@ a {
     color: white;
 }
 
+.image_part {
+    margin-top: 4%;
+}
+
 .image_part_text {
     font-size: 40px;
     background-color: #549de2;
@@ -101,6 +105,58 @@ a {
     font-family: fangsong;
 }
 
+/* Newly released character
+---------------------------------------------------*/
+.newly_released_char_part {
+    background-image: url(../Images/Genshin-Impact-Wallpapers.png);
+    height: 750px;
+    margin-top: 100px;
+    color: white;
+}
+
+    .newly_released_char_part h1 {
+        padding-bottom: 50px;
+        padding-top: 36px;
+    }
+
+.newly_released_char_table{
+    margin:auto;
+}
+
+.newly_released_char_table_row {
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.newly_released_char_images {
+    width: 10%;
+    float: left;
+}
+
+.newly_released_char_images img{
+    height: 300px;
+    width: auto;
+}
+
+.newly_released_char_text_wrap {
+    width: 40%;
+    text-align: left;
+    margin-bottom: 20%;
+    margin-left: 4%;
+}
+
+    .newly_released_char_text_wrap span {
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+
+
+.newly_released_char_name {
+}
+
+.newly_released_char_description{
+
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */

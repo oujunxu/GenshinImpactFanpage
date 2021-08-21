@@ -26,7 +26,7 @@ namespace GenshinImpactFanpage.Controllers
             string file_location = "../Images/lightbox_images/";
             List<string> images = new List<string>();
             List<string> images_c = new List<string>();
-            var chara = CharacterProcessor.GetLatestCharacter();
+            var chara = CharacterProcessor.GetLatestCharacter(); // Get the latest character and store it inside variable "chara".
 
             for(int i = 1; i<=4; i++)
             {

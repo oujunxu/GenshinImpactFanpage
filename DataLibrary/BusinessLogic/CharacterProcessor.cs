@@ -41,7 +41,7 @@ namespace DataLibrary.BusinessLogic
         {
             string sql = "Select Name, Rarity, Allegiance, Element, Image, Description " +
                             "from dbo.CharactersTable " +
-                            "Where Id = 12;";
+                            "Where Name in ('Yoimiya', 'Sayu')";
 
             return SqlDataAccess.LoadData<CharacterModel>(sql);
         }

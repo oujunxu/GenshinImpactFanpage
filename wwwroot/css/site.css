@@ -7,7 +7,7 @@ a.navbar-brand {
 }
 
 .navbar-brand img {
-    height: 100px;
+    height: 80px;
     width: auto;
 }
 
@@ -18,6 +18,13 @@ a.navbar-brand {
 .nav-item {
     font-size: 18px;
     font-weight: 700;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    background-color: #00000052;
 }
 
 /* Provide sufficient contrast against white background */
@@ -42,7 +49,7 @@ a {
  --------------------------------------------------*/
 .front_part {
     background-image: url(../Images/front_part_wallpaper.jpg);
-    height: 960px;
+    height: 1080px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,6 +179,12 @@ html {
         font-size: 16px;
     }
 
+    nav {
+        position: fixed;
+        z-index: 9;
+        width: 100%;
+    }
+
     .lightbox_table img {
         width: auto;
         max-height: 150px;
@@ -181,6 +194,7 @@ html {
         margin: auto;
     }
 }
+
 
 
 

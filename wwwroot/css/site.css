@@ -160,13 +160,40 @@ a {
         font-weight: 600;
     }
 
-
-
-.newly_released_char_name {
+/* History part
+-------------------------------------------------- */
+.genshin_history_part {
+    display: table;
+    background: #e7f4ffad;
 }
 
-.newly_released_char_description {
+.history_left_section {
+    float: left;
+    display: table-cell;
+    text-align: left;
+    width: 40%;
+    margin-left: 9%;
+    padding: 10% 0;
 }
+
+    .history_left_section h2 {
+        color: aqua;
+        font-weight: 700;
+        text-shadow: 1px 1px #0014ff;
+        margin-bottom: 20px;
+    }
+
+.history_right_section{
+    float: left;
+    display: table-cell;
+}
+
+    .history_right_section img {
+        height: 550px;
+        width: auto;
+        margin-top: 10%;
+        margin-left: 21%;
+    }
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -218,6 +245,12 @@ html {
 button.accept-policy {
     font-size: 1rem;
     line-height: inherit;
+}
+
+/* Add character page
+-------------------------------------------------- */
+.form-add-chara{
+    padding-top: 10%;
 }
 
 /* Sticky footer styles

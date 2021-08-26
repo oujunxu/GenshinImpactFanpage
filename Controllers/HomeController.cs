@@ -61,6 +61,7 @@ namespace GenshinImpactFanpage.Controllers
             ViewBag.genshinImages_center = images(file_location, "lightbox_center_", ".jpg");
             ViewBag.recentCharacter = chara;
             TempData["Item"] = sb;
+            TempData["Paimon"] = "../Images/paimon.png";
             return View();
         }
 
@@ -78,18 +79,24 @@ namespace GenshinImpactFanpage.Controllers
         }
 
 
-        public IActionResult Privacy()
+        public IActionResult CharacterList()
+        {
+            ViewBag.getAllCharacters = CharacterProcessor.GetAllCharacter();
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult CreateCharacter()
         {
             return View();
         }
 
-
+        [HttpPost]
         public IActionResult CreateCharacter(CharacterModel cm)
         {
             if (ModelState.IsValid)
             {
-                int recordsCreated = CharacterProcessor.CreateCharacter(
-                    cm.Id,
+                int response = CharacterProcessor.CreateCharacter(
                     cm.Name,
                     cm.Rarity,
                     cm.Birthday,

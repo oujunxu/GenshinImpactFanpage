@@ -8,12 +8,11 @@ namespace DataLibrary.BusinessLogic
 {
     public static class CharacterProcessor
     {
-        public static int CreateCharacter(int Id, string name, string rarity, string birthday, 
+        public static int CreateCharacter(string name, string rarity, string birthday, 
             string allegiance, string element, string image, string description)
         {
             CharacterModel data = new CharacterModel()
             {
-                Id = Id,
                 Name = name,
                 Rarity = rarity,
                 Birthday = birthday,
@@ -23,8 +22,8 @@ namespace DataLibrary.BusinessLogic
                 Description = description
             };
 
-            string sql = @"insert into dbo.CharacterTable (Id, Name, Rarity, Birthday, Allegiance, Element, Image, Description)
-                           values (@Id, @Name, @Rarity, @Birthday, @Allegiance, @Element, @Image, @Description);";
+            string sql = @"insert into dbo.CharactersTable (Name, Rarity, Birthday, Allegiance, Element, Image, Description)
+                           values (@Name, @Rarity, @Birthday, @Allegiance, @Element, @Image, @Description);";
 
             return SqlDataAccess.SaveData(sql, data);
 

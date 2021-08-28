@@ -3,28 +3,44 @@
 @{
     ViewBag.Title = "CharacterCreation";
 } 
-
-<form class="form-add-chara" asp-action="CreateCharacter" method="post">
-    <label for="Name">Name</label>
-    <input type="text" name="Name" />
-
-    <label for="Rarity">Rarity</label>
-    <input type="text" name="Rarity" />
-
-    <label for="Birthday">Birthday</label>
-    <input type="text" name="Birthday" />
-
-    <label for="Allegiance">Allegiance</label>
-    <input type="text" name="Allegiance" />
-
-    <label for="Element">Element</label>
-    <input type="text" name="Element" />
-
-    <label for="Image">Image</label>
-    <input type="text" name="image" />
-
-    <label for="Description">Description</label>
-    <input type="text" name="Description" />
-
-    <input type="submit" name="submit" />
-</form>
+<div class="wrap-add-character-form">
+    <h1 class="text-white text-center background-transparent-black">Add new character:</h1>
+    <form class="form-add-chara background-transparent-black" asp-action="CreateCharacter" method="post">
+        <div class="form-group">
+            <label asp-for="Name" class="text-white font-weight-bolder">Name</label>
+            <span asp-validation-for="Name" class="text-white font-weight-bolder font-italic background-transparent-black"></span>
+            <input asp-for="Name" type="text" class="form-control" name="Name" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Rarity" class="text-white font-weight-bolder">Rarity</label>
+            <span asp-validation-for="Rarity" class="text-white font-weight-bolder font-italic background-transparent-black"></span>
+            <input asp-for="Rarity" type="text" class="form-control" name="Rarity" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Birthday" class="text-white font-weight-bolder">Birthday</label>
+            <span asp-validation-for="Birthday" class="text-white font-weight-bolder font-italic background-transparent-black"></span>
+            <input asp-for="Birthday" type="text" class="form-control" name="Birthday" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Allegiance" class="text-white font-weight-bolder">Allegiance</label>
+            <span asp-validation-for="Allegiance" class="text-white font-weight-bolder font-italic background-transparent-black"></span>
+            <input asp-for="Allegiance" type="text" class="form-control" name="Allegiance" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Element" class="text-white font-weight-bolder">Element</label>
+            <span asp-validation-for="Element" class="text-white font-weight-bolder font-italic background-transparent-black"></span>
+            <input asp-for="Element" type="text" class="form-control" name="Element" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Image" class="text-white font-weight-bolder">Image</label>
+            <span asp-validation-for="Image" class="text-white font-weight-bolder font-italic background-transparent-black"></span>
+            <input asp-for="Image" type="text" class="form-control" name="image" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Description" class="text-white font-weight-bolder">Description</label>
+            <span asp-validation-for="Description" class="text-white font-weight-bolder font-italic background-transparent-black"></span>
+            <input asp-for="Description" type="text" class="form-control" name="Description" />
+        </div>
+        <input type="submit" name="submit" />
+    </form>
+</div>

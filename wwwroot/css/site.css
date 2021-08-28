@@ -249,8 +249,31 @@ button.accept-policy {
 
 /* Add character page
 -------------------------------------------------- */
-.form-add-chara{
+.wrap-add-character-form {
     padding-top: 10%;
+    padding-bottom: 3%;
+    background-image: url(../Images/front_part_wallpaper.jpg);
+}
+
+    .wrap-add-character-form h1 {
+        width: 50%;
+        margin: auto;
+        padding-top: 15px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+.background-transparent-black {
+    background-color: #00000045;
+}
+
+.form-add-chara {
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding: 45px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 /* Sticky footer styles

@@ -13,12 +13,12 @@ namespace DataLibrary.Models
         [Required(ErrorMessage = "Name is required.")]
         public string Name { get; set; }
 
-        [StringLength(50, MinimumLength = 8)]
-        [RegularExpression(@"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$")]
+        [StringLength(50, MinimumLength = 5)]
+        [RegularExpression(@"^[0-9]( {1,}).*[A-Za-z]*$")]
         [Required(ErrorMessage = "Must contain a number and characters.")]
         public string Rarity { get; set; }
 
-        [RegularExpression(@"^(A-Za-z)[-/./␣]([0-31])$")]
+        [RegularExpression(@"^(.*[A-Za-z])( {1,}).*[0-9]*$")]
         [StringLength(50)]
         [Required(ErrorMessage = "Must contain month and date.")]
         public string Birthday { get; set; }

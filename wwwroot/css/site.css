@@ -142,8 +142,8 @@ a {
 }
 
     .newly_released_char_images img {
-        height: 300px;
-        width: auto;
+        height: auto;
+        max-width: 180px;
         border: solid;
         color: #ff00003d;
         margin-top: 7px;
@@ -194,6 +194,21 @@ a {
         margin-top: 10%;
         margin-left: 21%;
     }
+
+/* Character List
+-------------------------------------------------- */
+.character-list-wrap {
+    padding-top: 10%;
+    padding-bottom: 3%;
+    background-image: url(../Images/InazumaWallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+.character-list-table {
+    width: 50%;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -249,6 +264,7 @@ button.accept-policy {
 
 /* Add character page
 -------------------------------------------------- */
+
 .wrap-add-character-form {
     padding-top: 10%;
     padding-bottom: 3%;

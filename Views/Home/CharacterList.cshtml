@@ -3,44 +3,45 @@
 @{
     ViewBag.Title = "CharacterList";
 }
-
-<table class="newly_released_char_table">
-    @{
-    foreach (CharacterModel data in ViewBag.getAllCharacters)
-    {
-    <tbody>
-        <tr class="newly_released_char_table_row">
-            <td>
-                <div class="newly_released_char_images">
-                    <img src="@data.Image" />
-                </div>
-            </td>
-            <td>
-                <div class="newly_released_char_text_wrap">
-                    <div class="newly_released_char_name">
-                        <span>Name:</span> <br /> @data.Name
-                    </div>
-                    <div>
-                        <span>Rarity:</span> <br /> @data.Rarity
-                    </div>
-                    <div>
-                        <span>Element:</span> <br /> @data.Element
-                    </div>
-                    <div>
-                        <span>Affiliation:</span> <br /> @data.Allegiance
-                    </div>
-                    <div class="newly_released_char_description">
-                        <span>Description:</span> <br /> @data.Description
-                    </div>
-                </div>
-            </td>
-        </tr>
-    </tbody>
-    /* Used for breaking up the tbody into separate parts. */
-    <tr>
-        <td><br /></td>
-    </tr>
-    }
-    }
-</table>
+<div class="character-list-wrap">
+    <table class="newly_released_char_table character-list-table">
+        @{
+            foreach (CharacterModel data in ViewBag.getAllCharacters)
+            {
+                <tbody>
+                    <tr class="newly_released_char_table_row">
+                        <td>
+                            <div class="newly_released_char_images">
+                                <img src="@data.Image" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="newly_released_char_text_wrap text-white">
+                                <div class="newly_released_char_name">
+                                    <span>Name:</span> <br /> @data.Name
+                                </div>
+                                <div>
+                                    <span>Rarity:</span> <br /> @data.Rarity
+                                </div>
+                                <div>
+                                    <span>Element:</span> <br /> @data.Element
+                                </div>
+                                <div>
+                                    <span>Affiliation:</span> <br /> @data.Allegiance
+                                </div>
+                                <div class="newly_released_char_description">
+                                    <span>Description:</span> <br /> @data.Description
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                /* Used for breaking up the tbody into separate parts. */
+                <tr>
+                    <td><br /></td>
+                </tr>
+            }
+        }
+    </table>
+</div>
 

@@ -204,6 +204,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: auto;
+    background-attachment: fixed;
 }
 
 .character-list-table {

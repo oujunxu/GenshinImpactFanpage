@@ -96,7 +96,7 @@ namespace GenshinImpactFanpage.Controllers
         {
             if (ModelState.IsValid)
             {
-                int response = CharacterProcessor.CreateCharacter(
+                CharacterProcessor.CreateCharacter(
                     cm.Name,
                     cm.Rarity,
                     cm.Birthday,
@@ -105,7 +105,9 @@ namespace GenshinImpactFanpage.Controllers
                     cm.Image,
                     cm.Description
                     );
-                return RedirectToAction("Index");
+                ViewData["Successful"] = cm.Name;
+                return RedirectToAction("CreateCharacter");
+                
             }
             return View();
         }

@@ -2,7 +2,7 @@
 
 @{
     ViewBag.Title = "CharacterCreation";
-} 
+}
 <div class="wrap-add-character-form">
     <h1 class="text-white text-center background-transparent-black">Add new character:</h1>
     <form class="form-add-chara background-transparent-black" asp-action="CreateCharacter" method="post">
@@ -41,6 +41,15 @@
             <span asp-validation-for="Description" class="text-white font-weight-bolder font-italic background-transparent-black"></span>
             <input asp-for="Description" type="text" class="form-control" name="Description" />
         </div>
-        <input type="submit" name="submit" />
+        <input type="submit" name="submit" onsubmit="WhenSubmit()" />
     </form>
 </div>
+
+@if(@ViewData["Successful"]!= null) {
+    <script>
+        window.onload = function WhenSubmit() {
+                alert(@Model.Name + " has been added.");
+                
+            };
+    </script>
+}

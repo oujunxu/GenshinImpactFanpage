@@ -18,18 +18,18 @@ namespace GenshinImpactFanpage.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IWebHostEnvironment _Environment;
+        private readonly IWebHostEnvironment _Environment; // used for getting the path to wwwroot.
 
         public HomeController(IWebHostEnvironment Environment)
         {
-            _Environment = Environment;
+            _Environment = Environment; 
         }
 
         public IActionResult Index()
         {
-            string file_location = "../Images/lightbox_images/";
+            string file_location = "../Images/lightbox_images/"; // path to the images.
             var chara = CharacterProcessor.GetLatestCharacter(); // Get the latest character and store it inside variable "chara".
-            string path = Path.Combine(_Environment.WebRootPath, "DocumentFolder", "GenshinHistory.txt");
+            string path = Path.Combine(_Environment.WebRootPath, "DocumentFolder", "GenshinHistory.txt"); // path to wwwroot.
             string line;
 
             StringBuilder sb = new StringBuilder();
@@ -94,8 +94,9 @@ namespace GenshinImpactFanpage.Controllers
         [HttpPost]
         public IActionResult CreateCharacter(CharacterModel cm)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid) // if there's no errors.
             {
+                // character will be added.
                 CharacterProcessor.CreateCharacter(
                     cm.Name,
                     cm.Rarity,

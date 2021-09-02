@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace DataLibrary.DataAccess
 {
+    /**
+     * This class is used for connection with the database.
+     */
     public static class SqlDataAccess
     {
         public static string GetConnectionString(string database="GenshinDB")

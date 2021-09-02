@@ -5,6 +5,10 @@ using System.Text;
 
 namespace DataLibrary.Models
 {
+    /**
+     * Model class for characters that will be added to the character list.
+     * This class also contains "rules" when data is added.
+     */
     public class CharacterModel
     {
         public int Id { get; set; }

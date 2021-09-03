@@ -6,8 +6,12 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.90" />
+    <PackageReference Include="JavaScriptEngineSwitcher.ChakraCore" Version="3.12.6" />
+    <PackageReference Include="JavaScriptEngineSwitcher.Extensions.MsDependencyInjection" Version="3.3.0" />
+    <PackageReference Include="JavaScriptEngineSwitcher.V8" Version="3.12.5" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="React.AspNet" Version="5.2.11" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>

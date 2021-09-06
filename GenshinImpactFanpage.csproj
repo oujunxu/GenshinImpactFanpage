@@ -6,35 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="wwwroot\lib\react-slick\node_modules\slick-carousel\bower.json" />
-    <Content Include="wwwroot\lib\react-slick\node_modules\slick-carousel\component.json" />
-    <Content Include="wwwroot\lib\react-slick\node_modules\slick-carousel\index.html" />
-    <Content Include="wwwroot\lib\react-slick\node_modules\slick-carousel\package.json" />
-    <Content Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick.jquery.json" />
-    <Content Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\ajax-loader.gif" />
-    <Content Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\fonts\slick.eot" />
-    <Content Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\fonts\slick.ttf" />
-    <Content Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\fonts\slick.woff" />
-    <Content Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\slick-theme.css" />
-    <Content Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\slick.css" />
+    <Compile Remove="wwwroot\lib\react-slick\css\**" />
+    <Compile Remove="wwwroot\lib\react-slick\node_modules\**" />
+    <Content Remove="wwwroot\lib\react-slick\css\**" />
+    <Content Remove="wwwroot\lib\react-slick\node_modules\**" />
+    <EmbeddedResource Remove="wwwroot\lib\react-slick\css\**" />
+    <EmbeddedResource Remove="wwwroot\lib\react-slick\node_modules\**" />
+    <None Remove="wwwroot\lib\react-slick\css\**" />
+    <None Remove="wwwroot\lib\react-slick\node_modules\**" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\Images\InazumaWallpaper.jpg" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\.npmignore" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\CONTRIBUTING.markdown" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\ISSUE_TEMPLATE.md" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\LICENSE" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\Makefile" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\README.markdown" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\config.rb" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\fonts\slick.svg" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\slick-theme.less" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\slick-theme.scss" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\slick.js" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\slick.less" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\slick.min.js" />
-    <None Include="wwwroot\lib\react-slick\node_modules\slick-carousel\slick\slick.scss" />
   </ItemGroup>
 
   <ItemGroup>
@@ -53,7 +36,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\lib\react-slick\css\" />
+    <Folder Include="wwwroot\lib\react-slick\" />
   </ItemGroup>
 
 </Project>

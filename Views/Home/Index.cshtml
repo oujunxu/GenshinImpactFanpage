@@ -3,8 +3,8 @@
     ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-        <div class="front_part">
+<div>
+        <div class="front_part text-center">
             <div class="front_part_item">
                 <div class="front_part_welcome_text">
                     <div class="front_part_quote_1"><span class="front_part_quote_capital_letter">Step</span> into Teyvat,  </div>
@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="image_part">
-            <div class="image_part_text">Wallpaper gallery</div>
+            <div class="image_part_text text-center font-weight-bolder">Wallpaper gallery</div>
             <div class="slideshow-container">
                 @{
                     foreach (var img in ViewBag.genshinAllImages)
@@ -27,7 +27,7 @@
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <table class="lightbox_table">
+            <table class="lightbox_table text-center">
                 <tr>
                     @{
                         foreach (var images in ViewBag.genshinImages)
@@ -46,7 +46,7 @@
                 </tr>
             </table>
         </div>
-        <div class="newly_released_char_part">
+        <div class="newly_released_char_part text-center">
             <h1>Newly Released Characters</h1>
             <table class="newly_released_char_table">
                 @{
@@ -86,7 +86,7 @@
                 }
             </table>
         </div>
-        <div class="genshin_history_part">
+        <div class="genshin_history_part text-center">
             <div class="history_left_section">
                 <h2>Genshin Impact: The Beginning</h2>
                 

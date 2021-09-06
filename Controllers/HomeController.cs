@@ -31,6 +31,7 @@ namespace GenshinImpactFanpage.Controllers
             var chara = CharacterProcessor.GetLatestCharacter(); // Get the latest character and store it inside variable "chara".
             string path = Path.Combine(_Environment.WebRootPath, "DocumentFolder", "GenshinHistory.txt"); // path to wwwroot.
             string line;
+            List<string> allImages = new List<string>();
 
             StringBuilder sb = new StringBuilder();
             try
@@ -56,7 +57,16 @@ namespace GenshinImpactFanpage.Controllers
                 Console.WriteLine("Executing finally block.");
             }
 
+            foreach (var img in images(file_location, "lightbox_", ".jpg")){
+                allImages.Add(img);
+            }
 
+            foreach (var img in images(file_location, "lightbox_center_", ".jpg"))
+            {
+                allImages.Add(img);
+            }
+
+            ViewBag.genshinAllImages = allImages;
             ViewBag.genshinImages = images(file_location, "lightbox_",".jpg");
             ViewBag.genshinImages_center = images(file_location, "lightbox_center_", ".jpg");
             ViewBag.recentCharacter = chara;

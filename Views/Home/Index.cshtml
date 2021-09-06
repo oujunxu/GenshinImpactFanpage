@@ -15,7 +15,18 @@
         </div>
         <div class="image_part">
             <div class="image_part_text">Wallpaper gallery</div>
-            <div id="content"></div>
+            <div class="slideshow-container">
+                @{
+                    foreach (var img in ViewBag.genshinAllImages)
+                    {
+                        <div class="mySlides">
+                            <img src="@img" alt="" style="width:100%" />
+                        </div>
+                    }
+                }
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
             <table class="lightbox_table">
                 <tr>
                     @{
@@ -70,9 +81,7 @@
                             </tr>
                         </tbody>
                         /* Used for breaking up the tbody into separate parts. */
-                        <tr>
-                            <td><br /></td>
-                        </tr>
+                        <tr><td><br/></td></tr>      
                     }
                 }
             </table>

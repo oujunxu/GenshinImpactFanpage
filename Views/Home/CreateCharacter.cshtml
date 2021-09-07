@@ -14,7 +14,10 @@
         <div class="form-group">
             <label asp-for="Rarity" class="text-white font-weight-bolder">Rarity</label>
             <span asp-validation-for="Rarity" class="text-white font-weight-bolder font-italic background-transparent-black"></span>
-            <input asp-for="Rarity" type="text" class="form-control" name="Rarity" />
+            <Select asp-for="Rarity" type="text" class="form-control" name="Rarity">
+                <option value="4 Star">4 Star</option>
+                <option value="5 Star">5 Star</option>
+            </Select>
         </div>
         <div class="form-group">
             <label asp-for="Birthday" class="text-white font-weight-bolder">Birthday</label>
@@ -29,7 +32,15 @@
         <div class="form-group">
             <label asp-for="Element" class="text-white font-weight-bolder">Element</label>
             <span asp-validation-for="Element" class="text-white font-weight-bolder font-italic background-transparent-black"></span>
-            <input asp-for="Element" type="text" class="form-control" name="Element" />
+            <select asp-for="Element" type="text" class="form-control" name="Element">
+                <option value="Anemo">Anemo</option>
+                <option value="Geo">Geo</option>
+                <option value="Electro">Electro</option>
+                <option value="Pyro">Pyro</option>
+                <option value="Cryo">Cryo</option>
+                <option value="Hydro">Hydro</option>
+                <option value="Dendro">Dendro</option>
+            </select>
         </div>
         <div class="form-group">
             <label asp-for="Image" class="text-white font-weight-bolder">Image</label>

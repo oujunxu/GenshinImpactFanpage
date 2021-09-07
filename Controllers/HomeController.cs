@@ -17,7 +17,6 @@ namespace GenshinImpactFanpage.Controllers
 
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly IWebHostEnvironment _Environment; // used for getting the path to wwwroot.
 
         public HomeController(IWebHostEnvironment Environment)

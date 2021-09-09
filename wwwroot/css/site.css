@@ -340,4 +340,24 @@ body {
         font-size: 20px;
     }
 
+    .lightbox_table img {
+        width: auto;
+        max-height: 100px;
+    }
+
+    .lightbox_table tr{
+        width:100%;
+    }
+
+    .lightbox_table{
+        margin:auto;
+    }
+
+}
+
+@media(max-width:770px){
+    .lightbox_table img {
+        width: auto;
+        max-height: 60px;
+    }
 }

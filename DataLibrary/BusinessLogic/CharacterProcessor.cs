@@ -25,7 +25,7 @@ namespace DataLibrary.BusinessLogic
                 Description = description
             };
 
-            string sql = @"insert into dbo.CharactersTable (Name, Rarity, Birthday, Allegiance, Element, Image, Description)
+            string sql = @"insert into dbo.CharacterTable (Name, Rarity, Birthday, Allegiance, Element, Image, Description)
                            values (@Name, @Rarity, @Birthday, @Allegiance, @Element, @Image, @Description);";
 
             return SqlDataAccess.SaveData(sql, data);
@@ -34,7 +34,7 @@ namespace DataLibrary.BusinessLogic
 
         public static List<CharacterModel> GetAllCharacter()
         {
-            string sql = @"select * from dbo.CharactersTable;";
+            string sql = @"select * from dbo.CharacterTable;";
 
             return SqlDataAccess.LoadData<CharacterModel>(sql);
         }
@@ -42,8 +42,8 @@ namespace DataLibrary.BusinessLogic
         public static List<CharacterModel> GetLatestCharacter()
         {
             string sql = "Select Name, Rarity, Allegiance, Element, Image, Description " +
-                            "from dbo.CharactersTable " +
-                            "Where Name in ('Yoimiya', 'Sayu')";
+                            "from dbo.CharacterTable " +
+                            "Where Name in ('Raiden Shogun', 'Yoimiya')";
 
             return SqlDataAccess.LoadData<CharacterModel>(sql);
         }

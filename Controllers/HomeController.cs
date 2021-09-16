@@ -116,7 +116,7 @@ namespace GenshinImpactFanpage.Controllers
                     cm.Description
                     );
                 ViewData["Successful"] = cm.Name;
-                return RedirectToAction("CreateCharacter");
+                return RedirectToAction("CharacterList");
                 
             }
             return View();

@@ -98,12 +98,15 @@ a {
 }
 
 .image_part {
-    margin-top: 4%;
+    border: #bd804f91 12px;
+    border-style: double;
+    padding: 10px 0;
+    margin: 10px;
 }
 
 .image_part_text {
     font-size: 40px;
-    background-color: #549de2;
+    background-color: #d9b79bdb;
     border-radius: 0 49px;
     width: 63%;
     margin: 10px auto;
@@ -117,7 +120,6 @@ a {
 .newly_released_char_part {
     background-image: url(../Images/Genshin-Impact-Wallpapers.png);
     padding-bottom: 30px;
-    margin-top: 100px;
     color: white;
 }
 

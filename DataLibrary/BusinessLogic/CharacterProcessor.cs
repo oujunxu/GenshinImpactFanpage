@@ -47,5 +47,12 @@ namespace DataLibrary.BusinessLogic
 
             return SqlDataAccess.LoadData<CharacterModel>(sql);
         }
+
+        public static List<CharacterModel> DeleteCharacter(string name)
+        {
+            string sql = "Delete from dbo.CharacterTable "+ "Where Name =" + name;
+
+            return SqlDataAccess.LoadData<CharacterModel>(sql);
+        }
     }
 }

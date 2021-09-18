@@ -32,6 +32,12 @@
                                 <div class="newly_released_char_description">
                                     <span>Description:</span> <br /> @data.Description
                                 </div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="submit" class="text-white background-transparent-black" value="X" onclick="@Url.Action("CreateCharacter","Home", new{@data.Name})"/>
                             </div>
                         </td>
                     </tr>

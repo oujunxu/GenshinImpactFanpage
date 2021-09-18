@@ -56,11 +56,3 @@
     </form>
 </div>
 
-@if(@ViewData["Successful"]!= null) {
-    <script>
-        window.onload = function WhenSubmit() {
-                alert(@Model.Name + " has been added.");
-                
-            };
-    </script>
-}

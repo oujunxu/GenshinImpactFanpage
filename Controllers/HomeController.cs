@@ -32,10 +32,10 @@ namespace GenshinImpactFanpage.Controllers
             string line;
             List<string> allImages = new List<string>();
 
+            // get text from a textdocument containing history about Gensin Impact and Mihoyo.
             StringBuilder sb = new StringBuilder();
             try
             {
-
                 StreamReader sr = new StreamReader(path);
 
                 line = sr.ReadLine();
@@ -56,6 +56,7 @@ namespace GenshinImpactFanpage.Controllers
                 Console.WriteLine("Executing finally block.");
             }
 
+            // two loops to insert all the images into one list.
             foreach (var img in images(file_location, "lightbox_", ".jpg")){
                 allImages.Add(img);
             }
@@ -87,10 +88,17 @@ namespace GenshinImpactFanpage.Controllers
             return imageList;
         }
 
-
+        [HttpGet]
         public IActionResult CharacterList()
         {
             ViewBag.getAllCharacters = CharacterProcessor.GetAllCharacter();
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CharacterList(string name)
+        {
+            CharacterProcessor.DeleteCharacter(name);
             return View();
         }
 

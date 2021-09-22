@@ -50,7 +50,7 @@ namespace DataLibrary.BusinessLogic
 
         public static List<CharacterModel> DeleteCharacter(string name)
         {
-            string sql = "Delete from dbo.CharacterTable "+ "Where Name =" + name;
+            string sql = "Delete from dbo.CharacterTable " + "Where Name =" + name;
 
             return SqlDataAccess.LoadData<CharacterModel>(sql);
         }

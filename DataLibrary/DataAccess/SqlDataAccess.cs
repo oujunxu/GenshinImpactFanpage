@@ -14,9 +14,9 @@ namespace DataLibrary.DataAccess
      */
     public static class SqlDataAccess
     {
-        public static string GetConnectionString(string database="GenshinDB", string Id = "anders", string password = "anders96")
+        public static string GetConnectionString(string database="GenshinDB", string Id = "oujun", string password = "")
         {
-            string connectionString = $"Server=XUOUJUN\\SQLEXPRESS;Database={database};Trusted_Connection=false;user id={Id};password={password};MultipleActiveResultSets=true";
+            string connectionString = $"Server=XUOUJUN\\SQLEXPRESS;Database=GenshinDB;Trusted_Connection=false;User id = anders; password=anders96;MultipleActiveResultSets=true";
 
             return connectionString;
         }

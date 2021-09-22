@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[CharactersTable]
 (
 	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY , 
-    [Name] NVARCHAR(50) NOT NULL, 
+    [Name] NVARCHAR(150) NOT NULL, 
     [Rarity] NVARCHAR(50) NOT NULL, 
     [Birthday] NVARCHAR(50) NOT NULL, 
     [Allegiance] NVARCHAR(256) NOT NULL, 

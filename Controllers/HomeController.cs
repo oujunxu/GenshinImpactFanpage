@@ -88,7 +88,7 @@ namespace GenshinImpactFanpage.Controllers
             return imageList;
         }
 
-        [HttpGet]
+
         public IActionResult CharacterList()
         {
             ViewBag.getAllCharacters = CharacterProcessor.GetAllCharacter();
@@ -96,10 +96,10 @@ namespace GenshinImpactFanpage.Controllers
         }
 
         [HttpPost]
-        public IActionResult CharacterList(string name)
+        public IActionResult CharacterList(int id)
         {
-            CharacterProcessor.DeleteCharacter(name);
-            return View();
+            CharacterProcessor.DeleteCharacter(id);
+            return RedirectToAction("Index");
         }
 
         [HttpGet]

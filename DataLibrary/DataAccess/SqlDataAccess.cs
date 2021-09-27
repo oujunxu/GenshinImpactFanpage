@@ -11,12 +11,14 @@ namespace DataLibrary.DataAccess
 {
     /**
      * This class is used for connection with the database.
+     * 
+     * "Server=XUOUJUN\\SQLEXPRESS;Trusted_Connection=false;User id=anders;password=anders96;MultipleActiveResultSets=true"
      */
     public static class SqlDataAccess
     {
-        public static string GetConnectionString(string database="GenshinDB", string Id = "oujun", string password = "u^#yB5^ty^?v/KE5")
+        public static string GetConnectionString(string database="GenshinDB", string Id = "anders", string password = "anders96")
         {
-            string connectionString = $"Server=genshindb.database.windows.net;Database=GenshinDB;Trusted_Connection=false;User id = {Id}; password={password};MultipleActiveResultSets=true";
+            string connectionString = $"Server=XUOUJUN\\SQLEXPRESS;Database=GenshinDB;Trusted_Connection=false;User id = {Id}; password={password};MultipleActiveResultSets=true";
 
             return connectionString;
         }

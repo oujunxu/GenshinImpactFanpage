@@ -119,9 +119,9 @@ a {
 ---------------------------------------------------*/
 .newly_released_char_part {
     background-image: url(../Images/Genshin-Impact-Wallpapers.png);
-    padding-bottom: 30px;
     color: white;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
     .newly_released_char_part h1 {

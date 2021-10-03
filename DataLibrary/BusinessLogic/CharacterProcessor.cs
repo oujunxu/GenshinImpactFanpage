@@ -25,7 +25,7 @@ namespace DataLibrary.BusinessLogic
                 Description = description
             };
 
-            string sql = @"insert into dbo.CharacterTable (Name, Rarity, Birthday, Allegiance, Element, Image, Description)
+            string sql = @"insert into dbo.GenshinCharactersTable (Name, Rarity, Birthday, Allegiance, Element, Image, Description)
                            values (@Name, @Rarity, @Birthday, @Allegiance, @Element, @Image, @Description);";
 
             return SqlDataAccess.SaveData(sql, data);
@@ -34,7 +34,7 @@ namespace DataLibrary.BusinessLogic
 
         public static List<CharacterModel> GetAllCharacter()
         {
-            string sql = @"select * from dbo.CharacterTable;";
+            string sql = @"select * from dbo.GenshinCharactersTable;";
 
             return SqlDataAccess.LoadData<CharacterModel>(sql);
         }
@@ -42,15 +42,15 @@ namespace DataLibrary.BusinessLogic
         public static List<CharacterModel> GetLatestCharacter()
         {
             string sql = "Select Name, Rarity, Allegiance, Element, Image, Description " +
-                            "from dbo.CharacterTable " +
-                            "Where Name in ('Raiden Shogun', 'Yoimiya')";
+                            "from dbo.NewlyReleasedCharacters " +
+                            "Where Name in ('Raiden Shogun', 'Sangonomiya Kokomi')";
 
             return SqlDataAccess.LoadData<CharacterModel>(sql);
         }
 
         public static List<CharacterModel> DeleteCharacter(int id)
         {
-            string sql = "Delete from dbo.CharacterTable " + "Where Id =" + id;
+            string sql = "Delete from dbo.GenshinCharactersTable " + "Where Id =" + id;
 
             return SqlDataAccess.LoadData<CharacterModel>(sql);
         }

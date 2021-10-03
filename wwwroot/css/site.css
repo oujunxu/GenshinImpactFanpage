@@ -121,6 +121,7 @@ a {
     background-image: url(../Images/Genshin-Impact-Wallpapers.png);
     padding-bottom: 30px;
     color: white;
+    background-repeat: no-repeat;
 }
 
     .newly_released_char_part h1 {
@@ -321,7 +322,7 @@ body {
     width: 100%;
     white-space: nowrap;
     line-height: 60px;
-    background-color: white;
+    background-color: black;
     opacity: 90%;
     text-align: center;
 }

@@ -130,6 +130,11 @@ namespace GenshinImpactFanpage.Controllers
             return View();
         }
 
+        public IActionResult QuizGame()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

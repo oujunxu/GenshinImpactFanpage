@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/lightbox.css" />
     <link rel="stylesheet" href="~/css/slide-show.css" />
+
 </head>
 <body>
     <header>
@@ -30,6 +31,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="CreateCharacter">Add Character</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="QuizGame">Quiz Game</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -37,10 +41,10 @@
     </header>
     <div class="wrapper">
         <div class="loader_bg">
-            <div class="loader"> 
+            <div class="loader">
             </div>
         </div>
-        
+
         <main role="main">
             @RenderBody()
         </main>
@@ -48,14 +52,16 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - GenshinImpactFanpage 
+            &copy; 2021 - GenshinImpactFanpage
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/lightbox.js"></script>
+    <script src="~/js/SimpleQuiz.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/slide-show.js" asp-append-version="true"></script>
+
 
 
     @RenderSection("Scripts", required: false)

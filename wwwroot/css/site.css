@@ -209,6 +209,7 @@ a {
     background-size: cover;
     overflow: auto;
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .character-list-table {
@@ -322,7 +323,6 @@ body {
     width: 100%;
     white-space: nowrap;
     line-height: 60px;
-    background-color: black;
     opacity: 90%;
     text-align: center;
 }
@@ -414,6 +414,40 @@ body {
         max-height: 30px;
     }
 }
+
+/* Quiz Game
+-------------------------------------------------*/
+.ul-left {
+    float: left;
+    width: 45%;
+}
+
+.ul-right {
+    float: left;
+    width: 45%;
+}
+
+
+#submit {
+    width: 20%;
+    height: 40px;
+    float: none;
+    background-color: #00bd6b;
+    color: #ffffff;
+    float: right;
+    margin-right: 10%;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+.ul-container {
+    text-align: center;
+}
+
+    .ul-container li {
+        margin-top: 10px;
+    }
 
 /* Loader for the page
 -----------------------------------------------*/

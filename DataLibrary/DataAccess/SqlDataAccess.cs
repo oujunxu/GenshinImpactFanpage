@@ -16,9 +16,9 @@ namespace DataLibrary.DataAccess
      */
     public static class SqlDataAccess
     {
-        public static string GetConnectionString(string database = "GenshinDB", string Id = "", string password = "")
+        public static string GetConnectionString()
         {
-            string connectionString = $"";
+            string connectionString = "";
 
             return connectionString;
         }

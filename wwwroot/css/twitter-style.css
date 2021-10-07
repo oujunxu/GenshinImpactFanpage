@@ -1,0 +1,17 @@
+﻿.end_part_index {
+    float: right;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+.footer-text{
+    max-width: 50%;
+    float: left;
+}
+
+.footer-wrapper {
+    min-height: 600px;
+    max-height: 800px;
+    background-color: #000000bf;
+}
+

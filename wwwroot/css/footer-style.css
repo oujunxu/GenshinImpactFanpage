@@ -1,0 +1,39 @@
+﻿.end_part_index {
+    float: right;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+.footer-text {
+    max-width: 50%;
+    float: left;
+    margin-top: 7%;
+}
+
+.footer-wrapper {
+    min-height: 600px;
+    max-height: 800px;
+    background-color: #000000bf;
+}
+.footer-link-list{
+    padding: 0;
+}
+
+.footer-link-list li{
+    height:35px;
+}
+
+    .footer-link-list a {
+        color: #6c757d;
+        list-style: none;
+    }
+
+    .footer-link-list a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+
+@media(max-width:500px){
+
+}

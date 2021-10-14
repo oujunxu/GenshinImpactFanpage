@@ -18,10 +18,11 @@ namespace DataLibrary.DataAccess
     {
         public static string GetConnectionString()
         {
-            string connectionString = "";
+            string connectionString ="";
 
             return connectionString;
         }
+
 
         public static List<T> LoadData<T>(string sql)
         {

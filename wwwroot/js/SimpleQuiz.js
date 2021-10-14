@@ -23,13 +23,13 @@
         b: "Hoyo-Mix",
         c: "Sawano Hiroyuki",
         d: "Selen",
-        correct: "a"
+        correct: "b"
     },
     {
         question: "4. When does Genshin Impact celebrate their anniversary?",
         a: "Jan 5th",
         b: "Oct 2nd",
-        c: "Aug 28th",
+        c: "Sep 28th",
         d: "Dec 13th",
         correct: "c"
     },
@@ -103,7 +103,7 @@ submitBtn.addEventListener('click', () => {
             quiz.innerHTML = ` 
            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
 
-           <button onclick="location.reload()">Reload</button> 
+           <button class="btn-reload" onclick="location.reload()">Reload</button>
            `
         }
     }

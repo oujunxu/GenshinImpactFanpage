@@ -326,11 +326,9 @@ body {
     text-align: center;
 }
 
-
 /* Width max 1150px
 ----------------------------------------------- */
-
-@media(max-width:1150px){
+@media(max-width:1150px) {
     body, html {
         max-width: 100%;
         overflow-x: hidden;
@@ -416,6 +414,18 @@ body {
 
 /* Quiz Game
 -------------------------------------------------*/
+#quiz{
+    background-image: url(../Images/Genshin-Impact-Wallpapers.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+}
+
+#question{
+    color: white;
+}
+
 .ul-left {
     float: left;
     width: 45%;
@@ -430,15 +440,36 @@ body {
 #submit {
     width: 20%;
     height: 40px;
-    float: none;
-    background-color: #00bd6b;
-    color: #ffffff;
+    color: white;
+    background-color: #00000080;
     float: right;
     margin-right: 10%;
     font-size: 17px;
     font-weight: 700;
 }
 
+#submit:hover{
+    background-color: black ;
+}
+
+.btn-reload {
+    background-color: #00000085;
+    color: white;
+    padding: 1%;
+    font-size: 20px;
+}
+
+.quiz-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10% 0;
+}
+
+.quiz-wrapper {
+    padding: 5%;
+    border: #ffe9d0 double;
+    background-color: #0000005c;
+}
 
 .ul-container {
     text-align: center;
@@ -446,6 +477,7 @@ body {
 
     .ul-container li {
         margin-top: 10px;
+        background-color: #00000033;
     }
 
 /* Loader for the page

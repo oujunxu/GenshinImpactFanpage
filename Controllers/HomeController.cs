@@ -14,7 +14,11 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace GenshinImpactFanpage.Controllers
 {
-
+    /// <summary>
+    /// Author Oujun
+    /// Controller class for communication between the View and the business logic.
+    /// In other word a class that controlls the flow of the data.
+    /// </summary>
     public class HomeController : Controller
     {
         private readonly IWebHostEnvironment _Environment; // used for getting the path to wwwroot.

@@ -7,6 +7,7 @@ using System.Text;
 namespace DataLibrary.BusinessLogic
 {
     /**
+     * Author Oujun
      * This static class is used to communicate with the database, using queries.
      */
     public static class CharacterProcessor
